@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ✈️ Tɴ Tʀᴀᴠᴇʟ</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+       <img src="Preview.jpg"
+            width="5%"
+            height="5%"
+            ><hr>
+            <h2>&emsp;Explore Tamil Nadu 🌬 </h2>
+            <hr>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="index1.html">Home</a></li>
+                <li><a href="about.html">Contact</a></li>
+            </ul>
+        </nav><HR>
+    </main>
+<body>
+
+</head>
+<body>
+
+  <div class="slideshow-container">
+  
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="b3.jpg" style="width:100%">
+    <div class="text">Black Thunder<br>
+      <a style="color: black;" href="https://www.blackthunder.in/location.html">Location</a>
+    </div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="b4.jpg" style="width:100%">
+    <div class="text">Coutrallam<br>
+    <a style="color: black;" href="https://maps.google.com/?q=Courtallam%2C+Tamil+Nadu&ftid=0x3b042a2dd855fc63:0x585150bdffcf2f74&entry=gps">Location</a>
+  </div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="b5.jpg" style="width:100%">
+    <div class="text" >Vellor fort<br>
+    <a style="color: black;" href="https://maps.google.com/?cid=15280291427062827683&entry=gps">Location</a>
+    </div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    <br><br>
+        <section id="Contact"></section>
+            <footer>
+                <p><b>📞 Contact no:</b> 91+ 1122 3344</p>
+                <p><b>📧  mail id:</b>info@TnTravels.com</p>
+                <p>&copy; 2024 Tourisum. All rights reserved.</p>
+            </footer>
+        </section>
+    
+</body>
+</html>
